@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lazify - Your Hairless Music Assistant</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Lazify - Your Hairless Music Assistant</h1>
+    
+    <br>
+    <br>
+    
+    <div class="tabs">
+      <div class="tabs__nav">
+        <a class="tabs__link tabs__link_active" href="#content-1">Library</a>
+        <a class="tabs__link" href="#content-2">Recent Updates</a>
+        <a class="tabs__link" href="#content-3">Playlists</a>
+      </div>
+      <div class="tabs__content">
+        <div class="tabs__pane tabs__pane_show" id="content-1">
+            <h3>Choose A Genre:</h3>
+            <br>
+            <div class="tags2">
+            </div>
+        </div>
+        <div class="tabs__pane" id="content-2">
+            <h3>Recent Updates</h3>
+            <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-post="immortalsteel/279" data-width="100%"></script>
+            <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-post="immortalsteel/278" data-width="100%"></script>
+            <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-post="immortalsteel/277" data-width="100%"></script>
+            <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-post="immortalsteel/276" data-width="100%"></script>
+            <script async src="https://telegram.org/js/telegram-widget.js?15" data-telegram-post="immortalsteel/275" data-width="100%"></script>
+        </div>
+        <div class="tabs__pane" id="content-3">
+            <h3>Playlists</h3>
+            <br>
+            <div>
+            <button onclick="hidetxt('div1'); return false;" href="#" rel="nofollow">
+            2019
+            </button>
+            <div style="display:none;" id="div1">
+            <br>
+            <iframe src="https://open.spotify.com/embed/playlist/1CoCtPUxJi5g1S7ADJcUZF" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <br>
+            <br>
+            </div>
+            </div>
+            <br>
+            <div>
+            <button onclick="hidetxt('div2'); return false;" href="#" rel="nofollow">
+            2020
+            </button>
+            <div style="display:none;" id="div2">
+            <br>
+            <iframe src="https://open.spotify.com/embed/playlist/57kHzWuLmEBqUDm6Xb6YAk" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <br>
+            <br>
+            </div>
+            </div>
+            <br>
+            <div>
+            <button onclick="hidetxt('div3'); return false;" href="#" rel="nofollow">
+            2021
+            </button>
+            <div style="display:none;" id="div3">
+            <br>
+            <iframe src="https://open.spotify.com/embed/playlist/6UNRk1sMxsJUJ2M5AoIrQU" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <br>
+            <br>
+            </div>
+            </div>
+            <br>
+            <div>
+            <button onclick="hidetxt('div4'); return false;" href="#" rel="nofollow">
+            Melodic Death Metal
+            </button>
+            <div style="display:none;" id="div4">
+            <br>
+            <iframe src="https://open.spotify.com/embed/playlist/3MvYMEbDIyBglvudfHB3Ar" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            <br>
+            <br>
+            </div>
+            </div>
+            <br>
+        </div>
+      </div>
+    </div>
+	
+	<script src="tags.js"></script>
+	<script src="script.js"></script>
+    
+    <script>
+    var show;
+    function hidetxt(type){
+     param=document.getElementById(type);
+     if(param.style.display == "none") {
+     if(show) show.style.display = "none";
+     param.style.display = "block";
+     show = param;
+     }else param.style.display = "none"
+    }
+    </script>
+</body>
+</html>

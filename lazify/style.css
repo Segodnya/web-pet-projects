@@ -1,0 +1,80 @@
+body {
+    background: black;
+    color: white;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.tags2 span {
+	border: 1px solid #000;
+    background: purple;
+	display: inline-block;
+	margin: 10px;
+	cursor: pointer;
+	transition: 0.5s ease
+}
+.tags2 span:hover {
+	color: #ffffff;
+	background-color: #222;
+}
+.tags2 span.active {
+	color: #ffffff;
+	background-color: #222;
+}
+
+
+.tag {
+	font-size: 12px;
+	padding: 5px;
+}
+
+
+.tabs {
+  max-width: "width=device-width, initial-scale=1.0";
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabs {
+  border: 1px solid lightgray;
+}
+
+.tabs__nav {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  background: #f8f8f8;
+  margin: 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.tabs__link {
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+.tabs__link_active {
+  background: lightgray;
+  cursor: default;
+}
+
+.tabs__link:not(.tabs__link_active):hover,
+.tabs__link:not(.tabs__link_active):focus {
+  background-color: #efefef;
+}
+
+.tabs__content {
+  padding: 1rem;
+}
+
+.tabs__pane {
+  display: none;
+}
+
+.tabs__pane_show {
+  display: block;
+}

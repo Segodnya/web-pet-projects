@@ -1,0 +1,2 @@
+# lazify
+Lazify - Playlist Assistant
